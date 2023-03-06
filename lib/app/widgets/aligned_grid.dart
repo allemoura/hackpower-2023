@@ -16,8 +16,9 @@ class AlignedGrid extends StatelessWidget {
         spacing: spacing,
         alignment: WrapAlignment.center,
         children: items
-            .map((item) =>
-                Padding(padding: const EdgeInsets.only(right: 40), child: item))
+            .map((item) => Padding(
+                padding: const EdgeInsets.only(top: 10, right: 40),
+                child: item))
             .toList(),
       ),
     );

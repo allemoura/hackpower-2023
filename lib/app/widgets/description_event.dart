@@ -8,7 +8,7 @@ class DescriptionEvent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(left: 10, right: 20),
-      height: MediaQuery.of(context).size.height,
+      height: MediaQuery.of(context).size.height * 1.5,
       color: Theme.of(context).colorScheme.primary,
       child: Column(
         mainAxisSize: MainAxisSize.min,

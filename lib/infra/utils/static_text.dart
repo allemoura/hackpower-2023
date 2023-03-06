@@ -21,10 +21,10 @@ class StaticText {
       "buttonLink": "https://forms.gle/gdJohGUDoD14VG1V6"
     },
     {
-      "title": "HACKATHON",
+      "title": "HACK POWER",
       "icon": Icons.group,
       "details": [
-        "Comparessa no dia 25/03/2023 e desenvolva uma ideia legal com sua equipe",
+        "Compareça no dia 25/03/2023 e desenvolva uma ideia legal com sua equipe",
         "Mesa redonda interessante na programação",
       ],
       "buttonText": "Como chegar",

@@ -65,7 +65,7 @@ class _DetailsItemState extends State<DetailsItem> {
                     Text(
                       widget.title,
                       style: const TextStyle(
-                          fontSize: 30,
+                          fontSize: 14,
                           fontWeight: FontWeight.bold,
                           color: Colors.grey),
                     ),
@@ -114,17 +114,16 @@ class _DetailsItemState extends State<DetailsItem> {
 
   detailsBox(String detail) {
     return Container(
+      padding: const EdgeInsets.only(left: 2, right: 2),
       color: Theme.of(context).colorScheme.secondary,
-      height: 60,
+      height: 65,
       width: 300,
       child: Center(
           child: Padding(
         padding: const EdgeInsets.only(left: 5, right: 5),
-        child: Text.rich(
-          TextSpan(
-            text: detail,
-            style: const TextStyle(fontSize: 16, color: Colors.grey),
-          ),
+        child: Text(
+          detail,
+          style: const TextStyle(fontSize: 10, color: Colors.grey),
           textAlign: TextAlign.center,
         ),
       )),
