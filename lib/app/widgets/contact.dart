@@ -8,7 +8,7 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         color: Theme.of(context).colorScheme.secondary,
-        height: MediaQuery.of(context).size.height * 0.2,
+        height: MediaQuery.of(context).size.height * 0.3,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -20,7 +20,7 @@ class Contact extends StatelessWidget {
                   Text(
                     "Organizadores",
                     style: TextStyle(
-                        fontSize: 22,
+                        fontSize: 14,
                         color: Theme.of(context).colorScheme.primary,
                         fontWeight: FontWeight.bold),
                   ),
@@ -40,7 +40,7 @@ class Contact extends StatelessWidget {
                 Text(
                   "Hack Power 2023",
                   style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 14,
                       color: Theme.of(context).colorScheme.primary,
                       fontWeight: FontWeight.bold),
                 ),
@@ -48,14 +48,14 @@ class Contact extends StatelessWidget {
                 const Text(
                   "Meninas na Ciência da Computação",
                   style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 6,
                       color: Colors.grey,
                       fontWeight: FontWeight.bold),
                 ),
                 const Text(
                   "email@mcc",
                   style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 6,
                       color: Colors.grey,
                       fontWeight: FontWeight.bold),
                 ),

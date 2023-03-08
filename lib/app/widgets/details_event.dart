@@ -8,30 +8,30 @@ class DetailsEvent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-        height: MediaQuery.of(context).size.height * 0.6,
-        child: Column(
-          children: [
-            const SizedBox(height: 30),
-            Text(
-              "COMO FUNCIONA?",
-              style: TextStyle(
-                  fontSize: 40,
-                  color: Theme.of(context).colorScheme.primary,
-                  fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 30),
-            AlignedGrid(
-                items: StaticText()
-                    .detailsEvent
-                    .map((details) => DetailsItem(
-                        title: details["title"],
-                        icon: details["icon"],
-                        details: details["details"],
-                        buttonTitle: details["buttonText"],
-                        linkButton: details["buttonLink"]))
-                    .toList())
-          ],
-        ));
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const SizedBox(height: 30),
+        Text(
+          "COMO FUNCIONA?",
+          style: TextStyle(
+              fontSize: 20,
+              color: Theme.of(context).colorScheme.primary,
+              fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 30),
+        AlignedGrid(
+            items: StaticText()
+                .detailsEvent
+                .map((details) => DetailsItem(
+                    title: details["title"],
+                    icon: details["icon"],
+                    details: details["details"],
+                    buttonTitle: details["buttonText"],
+                    linkButton: details["buttonLink"]))
+                .toList()),
+        const SizedBox(height: 20),
+      ],
+    );
   }
 }

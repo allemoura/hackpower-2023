@@ -14,10 +14,10 @@ class AlignedGrid extends StatelessWidget {
       child: Wrap(
         runSpacing: runSpacing,
         spacing: spacing,
-        alignment: WrapAlignment.center,
+        alignment: WrapAlignment.spaceEvenly,
         children: items
             .map((item) => Padding(
-                padding: const EdgeInsets.only(top: 10, right: 40),
+                padding: const EdgeInsets.only(top: 10),
                 child: item))
             .toList(),
       ),

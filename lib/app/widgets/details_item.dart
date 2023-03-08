@@ -89,6 +89,7 @@ class _DetailsItemState extends State<DetailsItem> {
                         .toList(),
                     CustomButton(
                       color: colors.primary,
+                      fontSize: 8,
                       onTap: () async {
                         if (widget.buttonTitle.isNotEmpty) {
                           try {
